@@ -8,7 +8,7 @@ export default function App() {
       <br />
       <div id="open-source">
         <a
-          href="https://github.com/KatieHaughey/week-6-weather-app"
+          href="https://github.com/KatieHaughey/weather-react"
           target="_blank"
           rel="noreferrer"
         >
