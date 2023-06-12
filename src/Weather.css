@@ -60,7 +60,7 @@ li {
   top: -24px;
 }
 
-#current-location-button {
+.current-location-button {
   display: block;
   margin: 25px auto;
   padding: 10px;
@@ -68,12 +68,12 @@ li {
   border-width: 1px;
   border: 1px solid whitesmoke;
 }
-#current-location-button:hover {
+.current-location-button:hover {
   cursor: pointer;
   background-color: #e5e5e5;
 }
 
-#weather-details {
+.weather-details {
   list-style-type: none;
   margin: 40px auto 0px;
   padding: 0%;

@@ -16,7 +16,7 @@ export default function Weather() {
     <div className="Weather">
       <div className="container">
         <div className="header">
-          <h1 id="city-name">{weatherData.city}</h1>
+          <h1>{weatherData.city}</h1>
           <h2>
             <div>
               <img src={weatherData.imgUrl} alt={weatherData.description} />
@@ -25,29 +25,24 @@ export default function Weather() {
             <span className="degreesToggle">°C</span>
           </h2>
           <h3>{weatherData.date}</h3>
-          <ul id="weather-details">
+          <ul className="weather-details">
             <li>{weatherData.description}</li>
             <br />
             <li>Humidity: {weatherData.humidity}%</li>
             <li>Wind: {weatherData.wind} km/h</li>
           </ul>
         </div>
-        <div className="five-days" id="forecast"></div>
+        <div className="five-days"></div>
       </div>
 
       <br />
 
-      <form className="change-city" id="city-form">
-        <input
-          type="text"
-          placeholder="Enter City"
-          id="enter-city"
-          autocomplete="off"
-        />
-        <input type="submit" id="submit-city" />
+      <form className="change-city">
+        <input type="search" placeholder="Enter City" autocomplete="off" />
+        <input type="submit" value="search" />
       </form>
 
-      <button id="current-location-button">Current location</button>
+      <button className="current-location-button">Current location</button>
     </div>
   );
 }
