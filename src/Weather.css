@@ -9,19 +9,6 @@
   opacity: 0.7;
 }
 
-body {
-  background-image: url(/images/pink-sky.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100%;
-}
-a {
-  text-decoration: none;
-}
-li {
-  text-transform: capitalize;
-}
-
 .five-days {
   text-align: center;
   border: 2px solid whitesmoke;
@@ -60,14 +47,17 @@ li {
   top: -24px;
 }
 
-.current-location-button {
-  display: block;
-  margin: 25px auto;
-  padding: 10px;
-  border-radius: 5px;
-  border-width: 1px;
-  border: 1px solid whitesmoke;
+.button {
+  border: none;
+  width: 100%;
 }
+.search {
+  padding: 7px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
 .current-location-button:hover {
   cursor: pointer;
   background-color: #e5e5e5;

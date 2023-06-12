@@ -3,10 +3,27 @@
   text-align: center;
 }
 #open-source a {
-  color: #d37d66;
+  color: gold;
 }
+
+#open-source a:hover {
+  text-decoration: underline;
+}
+
 #open-source {
   padding: 20px;
   text-align: center;
   color: white;
+}
+body {
+  background: url(/images/blue-sky.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+a {
+  text-decoration: none;
+}
+li {
+  text-transform: capitalize;
 }
