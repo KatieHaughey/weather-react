@@ -47,8 +47,12 @@ export default function Weather(props) {
           <div className="header">
             <h1>{weatherData.city}</h1>
             <h2>
-              <div>
-                <WeatherIcon code={weatherData.icon} size={100} />
+              <div className="p-2">
+                <WeatherIcon
+                  code={weatherData.icon}
+                  size={100}
+                  color={"white"}
+                />
               </div>
               <WeatherTemperature celsius={weatherData.temperature} />
             </h2>
@@ -67,9 +71,6 @@ export default function Weather(props) {
           <br />
 
           <form className="change-city" onSubmit={handleSubmit}>
-            <button className="button btn btn-light mb-4">
-              Current location
-            </button>
             <div className="row">
               <div className="col-9">
                 <input
